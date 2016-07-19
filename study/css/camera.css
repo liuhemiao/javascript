@@ -1,0 +1,21 @@
+div.SubCategoryBox{
+    width: 600px;
+    height: 300px;
+    font-family: Verdana;
+    font-size: 18px;
+    border: solid 2px;
+
+
+}
+ul{
+    list-style: none;
+}
+.SubCategoryBox a{
+    display: block;
+
+
+    padding: 5px 60px;
+    margin: 5px auto;
+    float: left;
+    text-decoration: none;
+}

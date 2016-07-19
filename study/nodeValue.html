@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NodeValue</title>
+</head>
+<body>
+<!--NodeValue-->
+<div id="container">这是一个DIV容器</div>
+<script>
+    var ele=document.getElementById("container");
+    console.log(ele.nodeName+":"+ele.nodeValue);
+    var attr=ele.attributes[0];
+    console.log(attr.nodeName+":"+attr.nodeValue);
+    var txt=ele.childNodes[0];
+    console.log(txt.nodeName+":"+txt.nodeValue);
+    var comment=document.body.childNodes[1];
+    console.log(comment.nodeName+":"+comment.nodeValue);
+    console.log(document.nodeName+":"+document.nodeValue);
+    console.log(document.doctype.nodeName+":"+document.doctype.nodeValue);
+    var flag=document.createDocumentFragment();
+    console.log(flag.nodeName+":"+flag.nodeValue);
+</script>
+</body>
+</html>
